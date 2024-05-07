@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-app.get((req, res) => {
+app.get('/', (req, res) => {
   console.log(req.param);
 
   res.end();
