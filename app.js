@@ -10,7 +10,7 @@ app.use(cors());
 app.get('/', (req, res) => {
   console.log(req.params);
 
-  res.end();
+  res.status(200).send('투표에 참여해 주셔서 감사합니다!');
 });
 
 app.listen(PORT, () => {
