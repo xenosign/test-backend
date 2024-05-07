@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  console.log(req.params);
+  console.log(req);
 
   res.status(200).send('투표에 참여해 주셔서 감사합니다!');
 });
