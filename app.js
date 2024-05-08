@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
   if (req.query.favorite === 'dog') dog++;
   if (req.query.favorite === 'cat') cat++;
 
+  console.log('실제 서버가 받은 정보 : ', req.query);
   console.log(`강아지 : ${dog} / 고양이 : ${cat}`);
 
   res.status(200).send('투표에 참여해 주셔서 감사합니다!');
